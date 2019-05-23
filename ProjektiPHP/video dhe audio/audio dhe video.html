@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Video dhe audio</title>
+</head>
+<script type="text/javascript">
+var vid = document.getElementById("video");
+function Playvideo()
+{
+    if(vid.paused)
+    {
+        vid.play();
+    }
+    else
+    {
+        vid.pause();
+    }
+}
+function Enlarge()
+{
+    vid.width=800;
+}
+</script>
+<body>
+<div>
+    <button onclick="Playvideo()" >Luaj/pauzo</button>
+</div>
+<audio controls autoplay>
+ <source src="song.mp3" type="audio/mp3">
+</audio>
+<video width="450" controls>
+    <source src="discoverd.mp4" type="video/mp4">
+</video>
+</body>
+</html>

@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Shkenca-Revista Drita</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="https://i.pinimg.com/originals/9e/8e/ab/9e8eab9ddabbefcb22a6365a9ff71311.png" sizes="16x16" />
+        <style type="text/css">
+             *{margin: 0;padding: 0;}
+              body{
+                   font-family: Georgia,"Times New Roman";
+                   background-color: #e0e0e0;
+                   font-size: 100%;
+              }
+              .faqja{
+                  width: 100%;
+                  min-width: 500px;
+
+                  margin: auto;
+              }
+              h1{
+                   font-size:5em;
+                   font-weight: normal;
+                   font-family: "Goudy Old Style","Times New Roman";
+                   text-transform: capitalize;
+                   margin-top: 0.3em;
+              }
+              h3{
+                   font-family: 'Titillium Web', sans-serif,serif;
+              }
+              /*stilizimi i linqeve*/
+               /*selektoret pseudo-klase*/
+              a{text-decoration: none; color: black;}
+              a:hover{
+                  background-color: grey;
+              }
+              .p1{
+                  background-color: #333333;
+                  font-family: "trebuchet ms",arial,helvetica,sans-serif;
+
+              }
+              header{
+                color:white;
+                background-color: #373737;
+                padding: 0.8em;
+                position: relative;
+              }
+              .a{
+
+                  font-family: "trebuchet ms",arial,helvetica,sans-serif;
+                  position: relative;
+                  left: 2px;
+                  text-decoration: none;
+                  color: white;
+               }
+              footer{
+                color: grey;
+                background-color: #e0e0e0;
+              }
+              .revista{
+                  margin: 0em 0em 1em 0em;
+                  font-size: 15px;
+                  font-family: 'Titillium Web', sans-serif,serif;
+              }
+              .menuja{
+                  text-decoration: none;
+                  color: black;
+                  font-family: "trebuchet ms",arial,helvetica,Georgia,"Times New Roman";
+                  padding: 12px;
+                  position: relative;
+                  bottom: 4px;
+              }
+              .fig1{
+                  margin: 1em 0em 1em 1em;
+              }
+
+              .t{
+                  color: black;
+              }
+              .klasa1{
+                 display: flex;
+                 flex: 1;
+              }
+              .pjesa1{
+                  display: flex;
+                  margin-bottom: 0;
+              }
+              .pjesa2{
+                  flex: 1;
+              }
+              .pjes1{
+                  flex: 1;
+              }
+              .fotopjesa1{
+                  flex: 1;
+                  margin-right: 0em;
+              }
+              .fotopjesa1 ul li{
+                  margin-top: 1em;
+                  margin-left: 3em;
+                  list-style:none;
+              }
+              /* klasa 3 */
+              .klasa3{
+                  display: flex;
+                  margin: 1em 0em -3em 0em;
+              }
+              .shaqiri{
+                  float: right;
+                  margin-top: 1em;
+                  position: relative;
+                  left: -70px;
+                  clear:right;
+              }
+              .kampion{
+                  float: right;
+                  margin: 1em 0em 0em 1em;
+              }
+
+              .kosova{
+                  width: 500px;
+
+              }
+              .pks{
+                  font-weight: normal;
+                  margin: 1em 1em 1em 0em;
+              }
+              /* */
+              .Lojtaret{
+                  margin: 1em 0em 1em 3em;
+                  display: flex;
+                  flex:1;
+                  justify-content: space-between;
+
+
+              }
+              .lojtaret{
+                  padding: 0.25em;
+                  border: solid 1px #999999;
+
+              }
+              .k1{
+                  margin: 0em 1em 1em 0em;
+                  font-weight: normal;
+                  width: 500px;
+                  height: 50px;
+              }
+              div img{
+                  border: solid 1px #999999;
+              }
+              figcaption{
+                  margin-bottom: 0.5em;
+                  font-weight: bold;
+              }
+              .zvicra{
+                  font-weight: normal;
+                  width: 500px;
+                  margin-top: 1em;
+              }
+              .latest{
+                  display: flex;
+                  flex-direction: row;
+                  margin: 0em 0.7em 0em 0.7em;
+              }
+              .latest:before,.latest:after{
+                  content: "";
+                  flex: 1 1;
+                  border-bottom: 1px solid red;
+                  margin: auto;
+              }
+
+              /* stilizimi i kl 2 */
+              .klasa2{
+                  display: flex;
+                  margin-bottom: -3em;
+              }
+              .nenkl2{
+                 margin: 1em 0em 0em 2em;
+                 flex: 1;
+              }
+              .nenk2{
+                  flex: 1;
+              }
+              .nenkl2 ul li {
+                  list-style: none;
+
+
+              }
+              .nenkl3{
+                  flex: 1;
+                  margin-right: 0;
+              }
+              .nenklasa3{
+                  flex:1;
+              }
+              .nenklasa3 ul li {
+                  list-style: none;
+              }
+              footer{
+                    padding: 0.5em;
+                    margin: 2em 0em 0em 3em;
+                    font-family: "Trebuchet MS" ,sans-serif;
+                    margin: 0;
+
+
+
+             }
+              footer p{
+                    font-size: 14px;
+                    font-family: serif;
+                    font-style: oblique;
+              }
+              .f1
+                {
+                    padding: 0.25em;
+                    border: solid 1px #999999;
+                }
+                .ron1{
+                    text-align: center;
+                    font-family: "trebuchet ms",arial,helvetica,sans-serif;
+                    width:50%;
+                }
+                small a{
+    text-decoration:none;
+    color:
+    rgb(90, 90, 90);
+}
+        </style>
+    </head>
+    <body>
+        <div class="faqja">
+        <header>
+           <small><a class="a" href="Regjistrohu.html">Regjistrohu</a></small>
+            <p style="display: inline"><small>|</small></p>
+            <small><a class="a" href="Futu.html">Futu</a></small>
+            <p style="display: inline"><small>|</small></p>
+            <small><a class="a" href="https://rss.com/">RSS</a></small>
+            <p style="display: inline"><small>|</small></p>
+            <small><a class="a" href="https://www.koha.net/arkivi/">Lajme t&euml; vjetra</a></small>
+            <svg height="30" width="130" style="position:absolute; right:8px; bottom: 7px;">
+            <circle cx="20" cy="15" r="12" stroke="white" stroke-width="1" fill="white" />
+            <circle cx="50" cy="15" r="12" stroke="white" stroke-width="1" fill="white" />
+            <circle cx="80" cy="15" r="12" stroke="white" stroke-width="1" fill="white" />
+            <circle cx="110" cy="15" r="12" stroke="white" stroke-width="1" fill="white" />
+            </svg>
+        </header>
+        <center>
+        <h1>Revista Drita</h1>
+        </center>
+        <center><h2 class="revista"> Te gjitha lajmet e fundit nga bota</h2></center>
+        <hr style="margin: 0em 1em 0em 1em;">
+        <hr style="position: relative; top:-7px; margin: 0em 1em 0em 1em;">
+        <p class="menuja"><small><a href="Sht&euml;pia.html">&nbsp;Sht&euml;pia</a> &nbsp;&nbsp;
+            <a href="Sporti.html">Sporti</a> &nbsp;&nbsp;
+            <a href="Shkenc&euml;.html" style="color: red;">Shkenca</a> &nbsp;&nbsp;
+            <a href="Kulture.html">Kultura</a> &nbsp;&nbsp;
+            <a href="Loja.html">Loja</a> &nbsp;&nbsp;
+            <a href="Rreth.html"> Rreth </a> </small> </p>
+        <hr style="margin: 0em 1em 0em 1em;">
+        <hr style="position: relative; top:-7px; margin: 0em 1em 0em 1em;">
+
+     <div class="pjesa1">
+     <div class="pjes1">
+     <figure class="fig1">
+            <img  src="https://telegrafi.com/wp-content/uploads/2018/01/1-336-780x439.jpg"
+                 alt="modric" style="width:500px;height:320px;"/>
+            <figcaption style="margin-top:0.5em;">Gjendet vrima e zez&euml; sa kat&euml;r diej n&euml; Galaktik&euml;n e Qum&euml;shtit
+            <p class="k1" style="margin-top: 0.5em;">Sjellja e çuditshme e nj&euml; ylli ndihmoi astronom&euml;t t&euml; gjejn&euml; nj&euml; vrim&euml; t&euml; zez&euml; ‘t&euml; vetmuar’ kat&euml;r her&euml; n&euml; mas&euml; t&euml; Diellit q&euml; fshihet n&euml; Rrug&euml;n e Qum&euml;shtit. L&euml;vizja e jasht&euml;zakonshme e yllit u shkaktua nga nj&euml; vrim&euml; e zez&euml; e vetmuar.
+            </p>
+            </figcaption>
+
+     </figure>
+     </div>
+         <div class="fotopjesa1">
+             <ul>
+             <li><img  class="f1" src="https://telegrafi.com/wp-content/uploads/2018/03/hawking-780x439.jpg"
+                       alt="pavard" style="width:150px;height:100px;"/>
+                 <p style="width:350px;font-weight: bold; position: relative; top: -115px; left: 185px;">Zbulimet e b&euml;ra nga Stephen Hawking</p>
+                 <p style="width:350px; height: 60px; position: relative; top: -100px; left:185px;">
+                 Stephen Hawking ka lindur m&euml; 8 janar 1942 n&euml; Oxford t&euml; Britanis&euml; s&euml; Madhe dhe vdiq me 14 mars 2018. Dashuria e par&euml; e tij ishte matematika.</p>
+             </li>
+             <li><img class="f1"  src="https://telegrafi.com/wp-content/uploads/2018/01/1-459-780x439.jpg"
+                       alt="valencia" style="width:150px;height:100px; margin-top: -3.5em;"/>
+                 <p style="width:350px;font-weight: bold; margin-top: -2em; position: relative; left: 185px; top: -83px;">Deshifrohet enigma m&euml; e madhe arkeologjike</p>
+                 <p style="width:350px; height: 60px; position: relative; top: -70px; left:185px;">Shkenc&euml;tar&euml;t kan&euml; arritur t&euml; deshifrojn&euml; nj&euml; shkrim 3200-vjeçar t&euml; shkruar mbi nj&euml; pllak&euml; guri, q&euml; ishte edhe nj&euml; nd&euml;r misteret m&euml; t&euml; m&euml;dha t&euml; arkeologjis&euml; mesdhetare.</p>
+             </li>
+
+             <li><img class="f1" src="https://telegrafi.com/wp-content/uploads/2017/12/materie-780x439.jpg"
+                       alt="harden" style="width:150px;height:100px; margin-top: -1.7em;"/>
+                 <p style="width:350px;font-weight: bold; margin-top: -1.7em; position: relative; left: 185px; top:-88px;">Zbulohet nj&euml; form&euml; e re e materies</p>
+                 <p style="width:350px; height: 60px; position: relative; top: -80px; left:185px;">Pothuajse 50 vjet pas krijimit t&euml; teoris&euml; s&euml; par&euml; p&euml;r ekscitoniumin, fizikant&euml;t p&euml;rfundimisht arrit&euml;n t&euml; gjejn&euml; fakte p&euml;r ekzistimin e k&euml;saj forme t&euml; materies, shkruan Daily Mail.</p>
+             </li>
+             </ul>
+         </div>
+     </div>
+     <div class="klasa2">
+     <div class="nenk2">
+     <figure class="fig1">
+            <img src="https://telegrafi.com/wp-content/uploads/2017/11/1-218-780x439.jpg"
+                 alt="zvicra" style="width:500px;height:320px; margin-top: -2em;"/>
+            <figcaption style="margin-top: 0.5em;">Gjendet ylli i cili n&euml; teori nuk duhet t&euml; ekzistoj&euml;
+                <p class="zvicra">
+                   Pavar&euml;sisht se deri tash ka eksploduar disa her&euml;, supernova iPTF14hls ende nuk &euml;sht&euml; shuar, transmeton CNN.
+                </p>
+            </figcaption>
+     </figure>
+     </div>
+         <div class="nenkl2">
+             <ul>
+                 <li><img class="f1" src="https://telegrafi.com/wp-content/uploads/2017/09/1-589-780x439.jpg" alt="allegri"
+                  style="width:150px;height:100px; margin-top: -2em; margin-left: 1.9em;"/>
+                <p style="width:350px;font-weight: bold; position: relative; top: -115px; left: 215px;">
+                    “Nj&euml; fshat” n&euml; H&euml;n&euml;, hapi i par&euml; drejt Marsit</p>
+                <p style="width: 350px; height:60px; position: relative; top:-100px; left:215px;">E ardhmja e trajnerit Maxi Allegri,
+                    Ngritja e nj&euml; “fshati” t&euml; q&euml;ndruesh&euml;m n&euml; H&euml;n&euml;, p&euml;rb&euml;n faz&euml;n e par&euml; drejt eksplorimit t&euml; njeriut n&euml; Mars, vler&euml;soi sot Agjencia Hap&euml;sinore Evropiane (ESA). </p>
+                 </li>
+                 <li><img class="f1" src="https://telegrafi.com/wp-content/uploads/2017/09/1-154-780x439.jpg" alt="solskajer"
+                  style="width:150px;height:100px; margin-top: -3.2em; margin-left: 1.9em;"/>
+                <p style="width:350px;font-weight: bold; position: relative; top: -115px; left: 215px;">
+                    N&euml; Antarktik ka oaza t&euml; ngrohta ku mund t&euml; ket&euml; jet&euml;</p>
+                <p style="width: 350px; height:60px; position: relative; top:-100px; left:215px;">Bota sekrete e kafsh&euml;ve dhe bim&euml;ve, ku p&euml;rfshihen edhe lloje deri m&euml; tash t&euml; panjohura,
+                 mund t&euml; jetojn&euml; n&euml; shpellat e ngrohta n&euml;n akullnajat e Antarktikut, thon&euml; shkenc&euml;tar&euml;t.</p>
+                 </li>
+                 <li><img class="f1" src="https://telegrafi.com/wp-content/uploads/2019/01/SAD.jpg" alt="arianit"
+                  style="width:150px;height:100px; margin-top: -2.6em; margin-left: 1.9em;"/>
+                <p style="width: 350px;font-weight: bold; position: relative; top: -115px; left: 215px;">
+                    Ngjyra juaj e syve ndikon n&euml; depresionin gjat&euml; dimrit</p>
+                <p style="width: 360px; height:60px; position: relative; top:-100px; left:215px;">P&euml;r disa njer&euml;z temperaturat e ftohta dhe dit&euml;t m&euml; t&euml; shkurtra sjellin nd&euml;r mend mrekullit&euml; e stin&euml;s s&euml; ftoht&euml;, mbr&euml;mje komode pran&euml; oxhakut me zjarrin bubulak.</p>
+                 </li>
+             </ul>
+         </div>
+     </div>
+        <h2 class="latest">Lajmet m&euml; t&euml; lexuara</h2>
+     <div class="klasa3">
+     <div class="nenkl3">
+     <figure class="fig1">
+            <img  src="https://telegrafi.com/wp-content/uploads/2019/01/ch1_hena-780x439.jpg"
+                 alt="kosova" style="width:500px;height:320px;"/>
+            <figcaption class="kosova" style="margin-top: 0.5em;">Kinez&euml;t aterojn&euml; n&euml; an&euml;n e err&euml;t t&euml; h&euml;n&euml;s (Foto)
+                <p class="pks">Kina zbret n&euml; h&euml;n&euml;. Zyrtar&euml;t kinez&euml; kan&euml; njoftuar se kan&euml; ulur me sukses nj&euml; anije hap&euml;sinore robotike n&euml; h&euml;n&euml;, n&euml; t&euml; par&euml;n p&euml;rpjekje t&euml; till&euml; t&euml; vendit.
+                </p>
+            </figcaption>
+     </figure>
+     </div>
+     <div class="nenklasa3">
+         <ul>
+             <li><img class="f1" src="https://telegrafi.com/wp-content/uploads/2018/08/galaxy-s10-concept1-780x439.jpg"
+              alt="Ks" style="width:150px; height: 100px; margin: 1em 0em 0em 2.9em;">
+                 <p style="width:350px;font-weight: bold; position: relative; top: -115px; left:230px;">
+                     Zbulohen emrat e modeleve t&euml; Galaxy S10</p>
+                 <p style=" width:350px;position:relative; left:230px; top:-100px;">
+                     Samsung zakonisht lanson dy versione t&euml; telefonave Galaxy S çdo vit, me madh&euml;si t&euml; ndryshme t&euml; ekranit.</p>
+             </li>
+             <li><img class="f1" src="https://telegrafi.com/wp-content/uploads/2018/11/kina-780x439.jpg"
+              alt="xhaka" style="width:150px; height: 100px;  margin: 0em 0em 0em 2.9em;">
+                 <p style="width: 350px;font-weight:bold; position:relative; left:230px; top: -115px;">
+                    Kina fillon planet p&euml;r rrjetin 6G</p>
+                 <p style="width: 350px;position:relative; left:230px; top: -105px;">
+                    P&euml;rderisa kompanit&euml; k&euml;rkojn&euml; t&euml; fillojn&euml; 5G vitin e ardhsh&euml;m, Kina planifikon t&euml; filloj&euml; pun&euml;n n&euml; 6G.</p>
+             </li>
+             <li><img class="f1" src="https://telegrafi.com/wp-content/uploads/2019/01/aaa-780x439.jpg"
+              alt="Icardi" style="width:150px; height: 100px; margin: -1em 0em 0em 2.9em;">
+                 <p style="width:350px;font-weight: bold;position: relative; top: -115px; left:230px;">
+                    Ajo q&euml; b&euml;jm&euml;, &euml;sht&euml; fryt i yni</p>
+                 <p style=" width:350px;position:relative; left:230px; top:-100px;">
+                     P&euml;rpiqem t’i buz&euml;qesh gjithçkaje, nga frika se do t&euml; duhej t&euml; qaja p&euml;r gjithçka.</p>
+             </li>
+         </ul>
+     </div>
+     </div>
+     <div>
+     <h2 class="latest">M&euml; T&euml; LEXUARAT N&euml; SHKENC&euml;</h2>
+     </div>
+     <div class="Lojtaret">
+         <figure>
+         <img class="lojtaret" src="https://telegrafi.com/wp-content/uploads/2013/03/fat-girl-eating-sweet-donuts-footage-074911628_prevstill-780x439.jpeg"
+              alt="ronaldo" style="width:150px; height: 100px;">
+         <figcaption class="ron1">Humbni kilogram&euml; me diet&euml;n e nat&euml;s</figcaption>
+         </figure>
+         <figure>
+         <img class="lojtaret" src="https://telegrafi.com/wp-content/uploads/2017/05/1-598-780x439.jpg"
+              alt="messi" style="width:150px; height: 100px;">
+         <figcaption class="ron1">NASA kthen syt&euml; nga Dielli
+</figcaption>
+         </figure>
+         <figure>
+         <img class="lojtaret" src="https://telegrafi.com/wp-content/uploads/2017/07/vaksina-780x439.jpg"
+              alt="messi" style="width:150px; height: 100px;">
+         <figcaption class="ron1">Shpiket vaksina anti-heroin&euml;
+</figcaption>
+         </figure>
+         <figure>
+         <img class="lojtaret" src="https://telegrafi.com/wp-content/uploads/2017/07/algoritmi-780x439.jpg"
+              alt="messi" style="width:150px; height: 100px;">
+         <figcaption class="ron1">Do t&euml; na qeveris&euml; nj&euml; algorit&euml;m
+</figcaption>
+         </figure>
+         <figure>
+         <img class="lojtaret" src="https://telegrafi.com/wp-content/uploads/2017/08/heronj-780x439.jpg"
+              alt="messi" style="width:150px; height: 100px;">
+         <figcaption class="ron1">T&euml; gjith&euml; jemi heronj t&euml; rastit</figcaption>
+         </figure>
+         <div>
+         </div>
+     </div>
+        <hr style="margin: 0em 1em 0em 1em;">
+     <footer>
+         <small><a href="#" style="color: grey;">&nbsp;&nbsp;Sht&euml;pia</a> |
+            <a href="#" style="color:grey;">Katalogu</a> |
+            <a href="#" style="color:grey;">Arkivi</a></small>
+            <p>&nbsp;&nbsp;Te drejtat e rezervuara &copy;Fiek2018</p>
+     </footer>
+        </div>
+    </body>
+</html>

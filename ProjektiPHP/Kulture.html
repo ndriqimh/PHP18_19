@@ -1,0 +1,427 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Kultura-Revista Drita</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="https://i.pinimg.com/originals/9e/8e/ab/9e8eab9ddabbefcb22a6365a9ff71311.png" sizes="16x16" />
+        <style type="text/css">
+             *{margin: 0;padding: 0;}
+              body{
+                   font-family: Georgia,"Times New Roman";
+                   background-color: #e0e0e0;
+                   font-size: 100%;
+              }
+              .faqja{
+                  width: 100%;
+                  min-width: 500px;
+
+                  margin: auto;
+              }
+              h1{
+                   font-size:5em;
+                   font-weight: normal;
+                   font-family: "Goudy Old Style","Times New Roman";
+                   text-transform: capitalize;
+                   margin-top: 0.3em;
+              }
+              h3{
+                   font-family: 'Titillium Web', sans-serif,serif;
+              }
+              /*stilizimi i linqeve*/
+               /*selektoret pseudo-klase*/
+              a{text-decoration: none; color: black;}
+              a:hover{
+                  background-color: grey;
+              }
+              .p1{
+                  background-color: #333333;
+                  font-family: "trebuchet ms",arial,helvetica,sans-serif;
+
+              }
+              header{
+                color:white;
+                background-color: #373737;
+                padding: 0.8em;
+                position: relative;
+              }
+              .a{
+
+                  font-family: "trebuchet ms",arial,helvetica,sans-serif;
+                  position: relative;
+                  left: 2px;
+                  text-decoration: none;
+                  color: white;
+               }
+              footer{
+                color: grey;
+                background-color: #e0e0e0;
+              }
+              .revista{
+                  margin: 0em 0em 1em 0em;
+                  font-size: 15px;
+                  font-family: 'Titillium Web', sans-serif,serif;
+              }
+              .menuja{
+                  text-decoration: none;
+                  color: black;
+                  font-family: "trebuchet ms",arial,helvetica,Georgia,"Times New Roman";
+                  padding: 12px;
+                  position: relative;
+                  bottom: 4px;
+              }
+              .fig1{
+                  margin: 1em 0em 1em 1em;
+              }
+
+              .t{
+                  color: black;
+              }
+              .klasa1{
+                 display: flex;
+                 flex: 1;
+              }
+              .pjesa1{
+                  display: flex;
+                  margin-bottom: 0;
+              }
+              .pjesa2{
+                  flex: 1;
+              }
+              .pjes1{
+                  flex: 1;
+              }
+              .fotopjesa1{
+                  flex: 1;
+                  margin-right: 0em;
+              }
+              .fotopjesa1 ul li{
+                  margin-top: 1em;
+                  margin-left: 3em;
+                  list-style:none;
+              }
+              /* klasa 3 */
+              .klasa3{
+                  display: flex;
+                  margin: 1em 0em -3em 0em;
+              }
+              .shaqiri{
+                  float: right;
+                  margin-top: 1em;
+                  position: relative;
+                  left: -70px;
+                  clear:right;
+              }
+              .kampion{
+                  float: right;
+                  margin: 1em 0em 0em 1em;
+              }
+
+              .kosova{
+                  width: 500px;
+
+              }
+              .pks{
+                  font-weight: normal;
+                  margin: 1em 1em 1em 0em;
+              }
+              /* */
+              .Lojtaret{
+                  margin: 1em 0em 1em 3em;
+                  display: flex;
+                  flex:1;
+                  justify-content: space-between;
+
+
+              }
+              .lojtaret{
+                  padding: 0.25em;
+                  border: solid 1px #999999;
+
+              }
+              .k1{
+                  margin: 0em 1em 1em 0em;
+                  font-weight: normal;
+                  width: 500px;
+                  height: 50px;
+              }
+              div img{
+                  border: solid 1px #999999;
+              }
+              figcaption{
+                  margin-bottom: 0.5em;
+                  font-weight: bold;
+              }
+              .zvicra{
+                  font-weight: normal;
+                  width: 500px;
+                  margin-top: 1em;
+              }
+              .latest{
+                  display: flex;
+                  flex-direction: row;
+                  margin: 0em 0.7em 0em 0.7em;
+              }
+              .latest:before,.latest:after{
+                  content: "";
+                  flex: 1 1;
+                  border-bottom: 1px solid red;
+                  margin: auto;
+              }
+
+              /* stilizimi i kl 2 */
+              .klasa2{
+                  display: flex;
+                  margin-bottom: -3em;
+              }
+              .nenkl2{
+                 margin: 1em 0em 0em 2em;
+                 flex: 1;
+              }
+              .nenk2{
+                  flex: 1;
+              }
+              .nenkl2 ul li {
+                  list-style: none;
+
+
+              }
+              .nenkl3{
+                  flex: 1;
+                  margin-right: 0;
+              }
+              .nenklasa3{
+                  flex:1;
+              }
+              .nenklasa3 ul li {
+                  list-style: none;
+              }
+              footer{
+                    padding: 0.5em;
+                    margin: 2em 0em 0em 3em;
+                    font-family: "Trebuchet MS" ,sans-serif;
+                    margin: 0;
+
+
+
+             }
+              footer p{
+                    font-size: 14px;
+                    font-family: serif;
+                    font-style: oblique;
+              }
+              .f1
+                {
+                    padding: 0.25em;
+                    border: solid 1px #999999;
+                }
+                .ron1{
+                    text-align: center;
+                    font-family: "trebuchet ms",arial,helvetica,sans-serif;
+                    width:50%;
+                }
+                small a{
+    text-decoration:none;
+    color:
+    rgb(90, 90, 90);
+}
+        </style>
+         <script>        
+        #paraqit,#paneli { 
+            padding: 5px;
+            text-align: center;
+            bacground-color: #e5eecc;
+            border: solid 1px #999999;
+        }
+        #paneli {
+            pading: 50px;
+            display: none;
+        }
+        </script>
+    </head>
+    <body>
+        <div class="faqja">
+        <header>
+           <small><a class="a" href="Regjistrohu.html">Regjistrohu</a></small>
+            <p style="display: inline"><small>|</small></p>
+            <small><a class="a" href="Futu.html">Futu</a></small>
+            <p style="display: inline"><small>|</small></p>
+            <small><a class="a" href="https://rss.com/">RSS</a></small>
+            <p style="display: inline"><small>|</small></p>
+            <small><a class="a" href="https://www.koha.net/arkivi/">Lajme t&euml; vjetra</a></small>
+            <svg height="30" width="130" style="position:absolute; right:8px; bottom: 7px;">
+            <circle cx="20" cy="15" r="12" stroke="white" stroke-width="1" fill="white" />
+            <circle cx="50" cy="15" r="12" stroke="white" stroke-width="1" fill="white" />
+            <circle cx="80" cy="15" r="12" stroke="white" stroke-width="1" fill="white" />
+            <circle cx="110" cy="15" r="12" stroke="white" stroke-width="1" fill="white" />
+            </svg>
+        </header>
+
+        <center>
+        <h1>Revista Drita</h1>
+        </center>
+        <center><h2 class="revista"> Te gjitha lajmet e fundit nga bota</h2></center>
+        <hr style="margin: 0em 1em 0em 1em;">
+        <hr style="position: relative; top:-7px; margin: 0em 1em 0em 1em;">
+        <p class="menuja"><small><a href="Sht&euml;pia.html">&nbsp;Sht&euml;pia</a> &nbsp;&nbsp;
+            <a href="Sporti.html">Sporti</a> &nbsp;&nbsp;
+            <a href="Shkencë.html">Shkenca</a> &nbsp;&nbsp;
+            <a href="Kulture.html" style="color: red;">Kultura</a> &nbsp;&nbsp;
+            <a href="Loja.html">Loja</a> &nbsp;&nbsp;
+            <a href="Rreth.html"> Rreth </a> </small> </p>
+        <hr style="margin: 0em 1em 0em 1em;">
+        <hr style="position: relative; top:-7px; margin: 0em 1em 0em 1em;">
+
+     <div class="pjesa1">
+     <div class="pjes1">
+     <figure class="fig1">
+            <img  src="https://telegrafi.com/wp-content/uploads/2019/01/Botticelli-780x439.jpg"
+                 alt="modric" style="width:500px;height:320px;"/>
+            <figcaption style="margin-top:0.5em;">Vepra e Botticellit fsheh një zem&euml;r
+            <p class="k1" style="margin-top: 0.5em;">N&euml; kryevepr&euml;n “La Madonna della melagrana”, q&euml; gjendet sot n&euml; muzeun “Uffizi di Firenze”, artisti Sandro Botticelli ka paraqitur anatomin&euml; e zemr&euml;s brenda frytit q&euml; mban n&euml; dor&euml; Jezuit f&euml;mij&euml;, pik&euml;risht n&euml; pjes&euml;n e majt&euml; t&euml; gjoksit. Ku zbulim &euml;sht&euml; arritur nga nj&euml; studim i botuar n&euml; revist&euml;n shkencore “Interactive CardioVascular.
+            </p>
+            </figcaption>
+     </figure>
+     </div>
+         <div class="fotopjesa1">
+             <ul>
+             <li><img  class="f1" src="https://telegrafi.com/wp-content/uploads/2019/01/Byron2-780x439.jpg"
+                       alt="pavard" style="width:150px;height:100px;"/>
+                 <p style="width:350px;font-weight: bold; position: relative; top: -115px; left: 185px;">Sht&euml;pia n&euml; Janin&euml;, ku bujti Bajroni</p>
+                 <p style="width:350px; height: 60px; position: relative; top: -100px; left:185px;">
+                 Gravura q&euml; mund t&euml; shihni m&euml; posht&euml;, &euml;sht&euml; sht&euml;pia e Nikolao Argjiri (Vreto) n&euml; Janin&euml;, ku q&euml;ndroi Lord Bajroni (Byron) dhe Lord Hobhousi n&euml; 5 tetor 1809.</p>
+             </li>
+             <li><img class="f1"  src="https://telegrafi.com/wp-content/uploads/2018/05/Frano-Kulli-780x439.jpg"
+                       alt="valencia" style="width:150px;height:100px; margin-top: -3.5em;"/>
+                 <p style="width:350px;font-weight: bold; margin-top: -2em; position: relative; left: 185px; top: -83px;">“Lahuta e Malcis’” dhe lahuta e… UNESCO-s</p>
+                 <p style="width:350px; height: 60px; position: relative; top: -70px; left:185px;">Shum&euml;kush q&euml; Gjergj Fishten e ka nj&euml;suar me “Lahuten e Mal&euml;sis&euml;”, me kryevepr&euml;n e vet letrare, e dì se p&euml;rreth saj jan&euml; sjell&euml; e pshtjell&euml; (mb&euml;shtjell&euml;) lavdia e pakundshoqe p&euml;r poetin.</p>
+             </li>
+
+             <li><img class="f1" src="https://telegrafi.com/wp-content/uploads/2018/12/Aeroplani-Tirane-Korce-04-780x439.jpg"
+                       alt="harden" style="width:150px;height:100px; margin-top: -1.7em;"/>
+                 <p style="width:350px;font-weight: bold; margin-top: -1.7em; position: relative; left: 185px; top:-88px;">N&euml; vitin 1937, kishte aeroplan t&euml; linj&euml;s Korç&euml;-Tiran&euml;</p>
+                 <p style="width:350px; height: 60px; position: relative; top: -80px; left:185px;">N&euml; vitin 1937, n&euml; Shqip&euml;ri operonte nj&euml; kompani italiane fluturimi q&euml; quhej “Ala Littoria S.A.” Kompania kryente fluturimet Korç&euml;-Tiran&euml; dhe anasjelltas.</p>
+             </li>
+             </ul>
+         </div>
+     </div>
+     <div class="klasa2">
+     <div class="nenk2">
+     <figure class="fig1">
+            <img src="https://telegrafi.com/wp-content/uploads/2018/12/Arben-Runa-780x439.jpg"
+                 alt="zvicra" style="width:500px;height:320px; margin-top: -2em;"/>
+            <figcaption style="margin-top: 0.5em;">Promovohet libri i Arben Run&euml;s, n&euml; p&euml;rvjetorin e par&euml; t&euml; vdekjes s&euml; tij
+                <p class="zvicra">
+                   Nj&euml; grup gazetar&euml;sh dhe mjek&euml;sh, miq t&euml; doktorit Arben Runa, u mblodh&euml;n bashk&euml; me familjar&euml; t&euml; tij p&euml;r t&euml; kujtuar n&euml; nj&euml;vjetorin e ikjes s&euml; tij.
+                </p>
+            </figcaption>
+     </figure>
+     </div>
+         <div class="nenkl2">
+             <ul>
+                 <li><img class="f1" src="https://telegrafi.com/wp-content/uploads/2018/12/Faltorja-780x439.jpeg" alt="allegri"
+                  style="width:150px;height:100px; margin-top: -2em; margin-left: 1.9em;"/>
+                <p style="width:350px;font-weight: bold; position: relative; top: -115px; left: 215px;">
+                    Zbulohet faltorja e vjet&euml;r peruane
+</p>
+                <p style="width: 350px; height:60px; position: relative; top:-100px; left:215px;">Arkeolog&euml;t kan&euml; zbuluar n&euml; veri t&euml; Perus&euml; nj&euml; faltore q&euml; daton m&euml; shum&euml; se 1,000 vjet, ku gjendeshin kufomat e 18 qenieve njer&euml;zore dhe disa lamave, njoftoi media peruane. </p>
+                 </li>
+                 <li><img class="f1" src="https://telegrafi.com/wp-content/uploads/2018/11/Filmi-780x439.jpg" alt="solskajer"
+                  style="width:150px;height:100px; margin-top: -3.2em; margin-left: 1.9em;"/>
+                <p style="width:350px;font-weight: bold; position: relative; top: -115px; left: 215px;">
+                    Analiz&euml; e filmit, “Dita z&euml; fill”</p>
+                <p style="width: 350px; height:60px; position: relative; top:-100px; left:215px;">Gentian Koçi, regjisori shqiptar, fitues çmimesh tek filmi i shkurt&euml;r dhe p&euml;r dokumentar&euml;, hap dyert e kinemas&euml; s&euml; filmit artistik, t&euml; gjat&euml;.</p>
+                 </li>
+                 <li><img class="f1" src="https://telegrafi.com/wp-content/uploads/2016/12/muzeu-780x439.jpg" alt="arianit"
+                  style="width:150px;height:100px; margin-top: -2.6em; margin-left: 1.9em;"/>
+                <p style="width: 350px;font-weight: bold; position: relative; top: -115px; left: 215px;">
+                    N&euml;nshkruhet statusi p&euml;r Muzeun t&euml; Kosov&euml;s</p>
+                <p style="width: 360px; height:60px; position: relative; top:-100px; left:215px;">Ministri i Kultur&euml;s, Rinis&euml; dhe Kultur&euml;s, Kujtim Gashi, ka n&euml;nshkruar sot statutin p&euml;r Muzeun e Kosov&euml;s.</p>
+                 </li>
+             </ul>
+         </div>
+     </div>
+        <h2 class="latest">Lajmet m&euml; t&euml; lexuara</h2>
+     <div class="klasa3">
+     <div class="nenkl3">
+     <figure class="fig1">
+            <img  src="https://telegrafi.com/wp-content/uploads/2019/01/ch1_hena-780x439.jpg"
+                 alt="kosova" style="width:500px;height:320px;"/>
+            <figcaption class="kosova" style="margin-top: 0.5em;">Kinez&euml;t aterojn&euml; n&euml; an&euml;n e err&euml;t t&euml; h&euml;n&euml;s (Foto)
+                <p class="pks">Kina zbret n&euml; h&euml;n&euml;. Zyrtar&euml;t kinez&euml; kan&euml; njoftuar se kan&euml; ulur me sukses nj&euml; anije hap&euml;sinore robotike n&euml; h&euml;n&euml;, n&euml; t&euml; par&euml;n p&euml;rpjekje t&euml; till&euml; t&euml; vendit.
+                </p>
+            </figcaption>
+     </figure>
+     </div>
+     <div class="nenklasa3">
+         <ul>
+             <li><img class="f1" src="https://telegrafi.com/wp-content/uploads/2018/12/Mimoza-Studenica-01-780x439.jpg"
+              alt="Ks" style="width:150px; height: 100px; margin: 1em 0em 0em 2.9em;">
+                 <p style="width:350px;font-weight: bold; position: relative; top: -115px; left:230px;">
+                     Art me let&euml;r</p>
+                 <p style=" width:350px;position:relative; left:230px; top:-100px;">
+                     Mimoza Studenica, dizajnere nga Prishtina, e para n&euml; Kosov&euml; punon piktura n&euml; teknik&euml;n e artit artizanal – “filigran n&euml; let&euml;r.</p>
+             </li>
+             <li><img class="f1" src="https://telegrafi.com/wp-content/uploads/2010/10/53443-la-traviata-ermonela-jaho-roh-johan-persson-2010-crop-780x439.jpg"
+              alt="xhaka" style="width:150px; height: 100px;  margin: 0em 0em 0em 2.9em;">
+                 <p style="width: 350px;font-weight:bold; position:relative; left:230px; top: -115px;">
+                    Ermonela Jaho dhe kufijt&euml; e magjis&euml;…</p>
+                 <p style="width: 350px;position:relative; left:230px; top: -105px;">
+                    Luan Rama ”T&euml; vdes&euml;sh… t&euml; vdes&euml;sh n&euml; sken&euml;! A &euml;sht&euml; e mundur?” – e pyeta Ermonel&euml;n n&euml; Paris, duke folur p&euml;r “Madame Batterfly” dhe “Traviatta”</p>
+             </li>
+             <li><img class="f1" src="https://telegrafi.com/wp-content/uploads/2019/01/Screen-Shot-2019-01-04-at-20.24.26-780x439.jpg"
+              alt="Icardi" style="width:150px; height: 100px; margin: -1em 0em 0em 2.9em;">
+                 <p style="width:350px;font-weight: bold;position: relative; top: -115px; left:230px;">
+                    Bitcoin po shkon drejt falimentimit</p>
+                 <p style=" width:350px;position:relative; left:230px; top:-100px;">
+                     Vet&euml;m nj&euml; vit m&euml; par&euml;, p&euml;rkrah&euml;sit entuziast&euml; t&euml; bitcoin, parashikuan se kritpomonedha do t&euml; arrinte nj&euml; çmim prej 1 milion&euml; dollar&euml;sh. Por kjo ishte at&euml;her&euml;.</p>
+             </li>
+         </ul>
+     </div>
+     </div>
+     <div>
+     <h2 class="latest">M&euml; T&euml; LEXUARAT N&euml; KULTUR&euml;</h2>
+     </div>
+     <div class="Lojtaret">
+         <figure>
+         <img class="lojtaret" src="https://telegrafi.com/wp-content/uploads/2019/01/teelgrf-780x439.jpg"
+              alt="ronaldo" style="width:150px; height: 100px;">
+         <figcaption class="ron1">Aksident te konviktet, dy t&euml; l&euml;nduar</figcaption>
+         </figure>
+         <figure>
+         <img class="lojtaret" src="https://telegrafi.com/wp-content/uploads/2017/05/1-598-780x439.jpg"
+              alt="messi" style="width:150px; height: 100px;">
+         <figcaption class="ron1">NASA kthen syt&euml; nga Dielli
+</figcaption>
+         </figure>
+         <figure>
+         <img class="lojtaret" src="https://telegrafi.com/wp-content/uploads/2019/01/bigstock-Young-woman-offering-cake-to-h-180966436-1.jpg"
+              alt="messi" style="width:150px; height: 100px;">
+         <figcaption class="ron1">Si reagon trupi juaj kur nuk pini m&euml; kafe?
+</figcaption>
+         </figure>
+         <figure>
+         <img class="lojtaret" src="https://telegrafi.com/wp-content/uploads/2018/09/Samsung-expected-to-launch-separate-Galaxy-S10-model-with-5G-support-780x439.jpg"
+              alt="messi" style="width:150px; height: 100px;">
+         <figcaption class="ron1">Do t&euml; na qeveris&euml; nj&euml; algorit&euml;m
+</figcaption>
+         </figure>
+         <figure>
+         <img class="lojtaret" src="https://telegrafi.com/wp-content/uploads/2019/01/gettyimages-605991649-640x640-780x439.jpg"
+              alt="messi" style="width:150px; height: 100px;">
+         <figcaption class="ron1">Doktor i vetest</figcaption>
+         </figure>
+         <div>
+         </div>
+     </div>
+        <hr style="margin: 0em 1em 0em 1em;">
+     <footer>
+         <small><a href="#" style="color: grey;">&nbsp;&nbsp;Sht&euml;pia</a> |
+            <a href="#" style="color:grey;">Katalogu</a> |
+            <a href="#" style="color:grey;">Arkivi</a></small>
+            <p>&nbsp;&nbsp;Te drejtat e rezervuara &copy;Fiek2018</p>
+     </footer>
+        </div>
+    </body>
+</html>
