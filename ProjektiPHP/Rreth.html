@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="utf-8">
+        <link rel="icon" type="image/png" href="https://i.pinimg.com/originals/9e/8e/ab/9e8eab9ddabbefcb22a6365a9ff71311.png" sizes="16x16" />
+        <title>Rreth-RevistaDrita</title>
+        <style>
+/*fromatimi gjeneral i teksit*/
+html,body,header,footer,hgroup,nav,article,section,figure,figcaption,h1,h2,h3,ul,li,div,p,img
+{
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    border: 0;
+}
+.faqja {
+    width: 100%;
+    min-width: 500px;
+    max-width: 1400px;
+    margin: auto;
+}
+h1,h2,h3,nav,footer
+{
+    font-family: "Trebuchet MS" ,sans-serif;
+  
+    
+}
+body{
+    font-family: Georgia,"Times New Roman";
+    background-color: #e0e0e0;
+    font-size: 100%;
+    margin: 0em 4em 0.5em 4em;
+    
+    
+}
+h1{
+    font-size: 24px;
+    font-size: 1.5rem;
+    color:black;
+    padding: 0.8em;
+    margin: 0;
+}
+h2{
+    font-size: 25px;
+}
+h3{
+    font-size: 18px;
+    border-bottom: solid 1pt #999999;
+}
+.emri{
+    font-size:5em;
+    font-weight: normal;
+    font-family: "Goudy Old Style","Times New Roman";
+    text-transform: capitalize;
+    margin-top: -0.5em;   
+}
+.emri1{
+    font-family: 'Titillium Web', sans-serif,serif;
+    margin-top: -4.2em;
+    font-size: 15px;
+}
+p{
+    font-size: 16px;
+}
+nav{
+    font-size: 18px;
+}
+.stafi{
+    height: 30px;
+    text-align: center;
+}
+/*stilizimi i linqeve*/
+a:link{
+    color: white;
+}
+a:hover{
+    background-color: #ffcccc;
+}
+/*stilizimi i header,footer,nav*/
+header {
+    color: white;
+    background-color: #333333;
+    padding: 0.8em;
+    margin: 0em -4em 0em -4em;
+    position: relative;
+ 
+}
+/* Kontenjeri i flip kardes per te caktuar gjeresine dhe gjatesine */
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 270px;
+  perspective: 1000px; /* Efekti 3d */
+}
+
+/* Kontenjeri per pozicionimin e pjeses mbrapa dhe para */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Ben nje kthim horizondal kur kalojm me mous te flip card */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Pozicionimi i pjeses perpara dhe mbrapa */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+/*Stilizimi perpara i filp card  */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/*Stilizimi mbrapa i flip card */
+.flip-card-back {
+  background-color: lightblue;
+  color: white;
+  transform: rotateY(180deg);
+}
+.gazeta{
+    margin-top: 2em;
+    display: flex;
+    justify-content: space-around;
+}
+.ngjyra{
+    color: black;
+}
+.c{
+    margin: 0;
+}
+.t{
+    position: relative;
+    left: 20px;
+}
+.a{
+    background-color: #333333;
+    font-family: "trebuchet ms",arial,helvetica,sans-serif;
+    position: relative;
+    
+    left: 2px;
+    text-decoration: none;
+    color: white;
+  
+}
+footer{
+    color:white;
+    background-color: #333333;
+}
+.f{
+    color: white;
+}
+.tel{
+    color: black;
+    text-decoration: none;
+}
+div img{
+    border: solid 1px #999999;
+}
+.ex{
+    background-color: #7d7d7d;
+    padding: 15px;
+    color: white;
+    margin-top: 4em;
+}
+.ex1{
+    background-color: #7d7d7d;
+    padding: 15px;
+    color: white;
+    margin-top: 1em;
+    
+    
+}
+.p2{
+    background-color: #4b4a52;
+    padding: 15px;
+
+}
+
+.c{
+    border: solid 1px #000000;
+}
+p{
+    margin: 0 0 0.5em 0;
+}
+.b {
+    display: inline-block;
+    border-radius: 4px;
+}
+.M{
+    padding:auto;
+    border: solid 1px #999999;
+}
+.menuja{
+    background-color: #e0e0e0;
+    margin: 0em 0em 0em -4em;
+    position: relative;
+    left: 12px;
+    padding: 5px;
+    top: 5px;
+}
+.menuja1{
+    
+    text-decoration: none;
+    color: black;
+    font-family: "trebuchet ms",arial,helvetica,Georgia,"Times New Roman";
+}
+/* stilizimi i formes */
+/* Stilizimi i inputeve me type text*/
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */  
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Stizilimi i butonit Dergo */
+input[type=submit] {
+  background-image: linear-gradient(white,grey);
+  color: black;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 3px 3px 5px grey;
+}
+
+/* Kalimi me maus ne butonin Dergo ndryshohet gradienti */
+input[type=submit]:hover {
+   background-image: linear-gradient(grey,black);
+}
+
+/* Ngjyra e formes dhe padding */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+/*stilizimi i footer*/
+footer{
+    margin-top: 1em;
+    padding: 0.5em;
+    font-weight: normal;
+    font-style: oblique;   
+
+}
+footer p{
+    font-size: 14px;
+    
+}
+@media screen and (max-width:1100px){
+    .gazeta{
+        width: 100%;
+        display: inline-block;
+    }
+    .flip-card{
+        margin-bottom: 2em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .flip-card:last-child{
+        margin-bottom: 1em;
+    }
+}
+/*stilizimi i drag and drop */
+#div1, #div2 {
+  float: right;
+  width: 100px;
+  height: 35px;
+  margin: 18px 5px 0px 0px;
+  padding: 10px;
+  border: 1px dashed white;
+}
+</style>
+<script>
+  function allowDrop(ev) {
+  ev.preventDefault();
+}
+
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  ev.target.appendChild(document.getElementById(data));
+}
+</script>
+    </head>
+    <body>
+        <div class="faqja">
+        <header> 
+           <small><a class="a" href="Regjistrohu.html">Regjistrohu</a></small>
+            <p class="lidhja" style="display: inline"><small>|</small></p>
+            <small><a class="a" href="Futu.html">Futu</a></small>
+            <p class="lidhja" style="display: inline"><small>|</small></p>
+            <small><a class="a" href="https://www.rss.com">RSS</a></small>
+            <p class="lidhja" style="display: inline"><small>|</small></p>
+            <small><a class="a" href="https://www.koha.net/arkivi/">Lajme t&euml; vjetra</a></small>
+            <svg height="30" width="130" style="position:absolute; right:6px; bottom: 7px;">
+            <circle cx="20" cy="15" r="12" stroke="white" stroke-width="1" fill="white" />
+            <circle cx="50" cy="15" r="12" stroke="white" stroke-width="1" fill="white" />
+            <circle cx="80" cy="15" r="12" stroke="white" stroke-width="1" fill="white" />
+            <circle cx="110" cy="15" r="12" stroke="white" stroke-width="1" fill="white" />
+            </svg>
+        </header>
+         <center>
+        <h1 class="emri">Revista Drita</h1>
+        </center>
+        <center><h2 class="emri1"> Te gjitha lajmet e fundit nga bota</h2></center>
+        <hr style="margin: 1em -3.1em 0em -3.1em;">
+        <hr style="position: relative; top:-7px; margin: 0em -3.1em 0em -3.1em; ">
+        <p class="menuja"><small>
+                <a href="Sht&euml;pia.html" class="menuja1" style="color:black;">Sht&euml;pia</a>&nbsp;&nbsp;
+                <a href="Sporti.html" class="menuja1">Sporti</a> &nbsp;&nbsp;
+                <a href="Shkencë.html" class="menuja1">Shkenca</a> &nbsp;&nbsp;            
+                <a href="Kulture.html" class="menuja1">Kultura</a> &nbsp;&nbsp;
+                <a href="Loja.html" class="menuja1">Loja</a> &nbsp;&nbsp;
+                <a href="Rreth.html" class="menuja1" style="color: black;text-shadow: 2px 2px 5px red;" > Rreth </a> </small> </p>
+        <hr style="margin: 1em -3.1em 0em -3.1em;">
+        <hr style="position: relative; top:-7px; margin: 0em -3.1em 0em -3.1em; ">
+        <div class="stafi">
+        <h2 style="margin-top:1em; font-family: Georgia; text-shadow: 2px 2px 5px grey;">Stafi jon&euml;</h2>
+        </div>
+        <hr style="margin-top: 2em;">
+        
+        
+        <div class="gazeta">    
+            <div class="flip-card">
+            <div class="flip-card-inner">
+            <div class="flip-card-front">
+                     <img  class="M" src="Fotot/foto1.png" alt="Muhamedi"
+                          style="width:300px;height:270px;">
+            </div>
+            <div class="flip-card-back">
+            <h1>Muhamed Zahiri</h1> 
+            <p class="ngjyra">Studies Copmuter Engeneering</p>
+            <p class="ngjyra">at University of Prishtina</p> 
+            <p class="ngjyra">We love that guy</p>
+            </div>
+            </div>
+            </div>
+            <div class="flip-card">
+            <div class="flip-card-inner">
+            <div class="flip-card-front">
+                     <img class="M" src="Fotot/foto2.jpg"
+                          alt="Ndriqim" style="width:300px;height:270px;">
+            </div>
+            <div class="flip-card-back">
+                <h1>Ndri&ccedil;im Hajrullahu</h1>
+                
+                <p class="ngjyra">Studies Copmuter Engeneering</p>
+                <p class="ngjyra">at University of Prishtina</p>
+                <p class="ngjyra">We love that guy</p>
+            </div>
+            </div>
+            </div>
+        
+            
+            <div class="flip-card">
+            <div class="flip-card-inner">
+            <div class="flip-card-front">
+                     <img class="M" src="Fotot/foto3.jpg"
+                          alt="Ndriqa" style="width:300px;height:270px;" >
+            </div>
+            <div class="flip-card-back">
+            <h1>Ndriqim Muhadri</h1> 
+            <p class="ngjyra">Studies Copmuter Engeneering</p>
+            <p class="ngjyra">at University of Prishtina</p>
+            <p class="ngjyra">We love that guy</p>
+            </div>
+            </div>
+            </div>
+        </div>
+      
+        <hr style="position:relative; top: 30px;">
+
+        <div id="mainContact">
+            <h3 class="ex">Detajet Personale</h3>
+            <p class="c">
+                &nbsp;Adresa: Agim Ramadani nr.1 <br>
+                &nbsp;Qyteti: Gjilan<br>
+                &nbsp;Regjioni: 06<br>
+                &nbsp;Shteti:Kosov&euml;<br>
+                &nbsp;Kodi postal:60000 
+            </p>
+           
+        </div>
+       <br>
+        <div id="lastViewed">
+            <h3 class="ex1" >Kontakted e fundit</h3>
+            <p class="c"><a href="#" class="tel" >&nbsp;Telefoni:&#128276;+38344123123</a>
+                <br> <a href="#" class="tel">&nbsp;Email:&#128231;revistadrita@microsoft.com</a>
+            </p>
+            
+        </div>
+     <br>
+     <div class="container">
+    <form action="action_page.php">
+
+        <label for="emri">Emri</label>
+        <input type="text" id="emri" name="emri" placeholder="Emri juaj..">
+
+        <label for="mbiemri">Mbiemri</label>
+        <input type="text" id="mbiemri" name="mbiemri" placeholder="Mbiemri juaj..">
+
+        <label for="shteti">Shteti</label>
+    <select id="shteti" name="shteti">
+        <option value="australia">Shqip&euml;ria</option>
+        <option value="canada">Kosova</option>
+        <option value="usa">Maqedonia</option>
+    </select>
+
+        <label for="subjekti">Subjekti</label>
+        <textarea id="subjekti" name="subjekti" placeholder="Shenoni ketu ..." style="height:200px"></textarea>
+
+        <input type="submit" value="Dergo">
+
+    </form>
+         
+</div>
+     
+     <div>
+            <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+             <img src="http://www.name-doctor.com/nomi.png/20840.png" alt="drita"
+                  draggable="true" ondragstart="drag(event)" id="drag1" width="92" height="35">
+            </div>
+
+            <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+     </div>
+        <footer>
+            <p><a href="#" class="f">Sht&euml;pia</a> | <a href="#" class="f">Katalogu</a></p>
+             <p>Te drejtat e rezervuara &copy;Fiek2018</p>
+        </footer>   
+        </div> 
+    </body>
+
+</html>
