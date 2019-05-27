@@ -125,13 +125,27 @@
         }
         .pjesa1{
             padding-left: 1em;
-            border: solid 2px;
+            border: solid 1px;
             margin-right: 2%;
             width: 49%;
         }
         .pjesa2{
             padding-left: 1em;
-            border: solid 2px;
+            border: solid 1px;
+            width: 49%;
+        }
+        .stringjet{
+            display: flex;
+        }
+        .str1{
+            padding-left: 1em;
+            border: solid 1px red;
+            margin-right: 2%;
+            width: 49%;
+        }
+        .str2{
+            padding-left: 1em;
+            border: solid 1px red;
             width: 49%;
         }
     </style>
@@ -174,7 +188,7 @@
 </div>
 <h2 style="text-align: center;margin: 1em 0em 1em 0;">Vargjet </h2>
 <div class="pjesa">
-    <div class="pjesa1">
+    <div class="pjesa1" style="padding-bottom: 1em;">
     <?php
         echo "<h4>Stafi jone perbehet nga: </h4>";
         $stafi = array("Ndriqimi", "Muhamedi", "Ndriqa");
@@ -195,7 +209,7 @@
 
     ?>
     </div>
-    <div class="pjesa2">
+    <div class="pjesa2" style="padding-bottom: 1em;">
         <?php
         echo "<h4>Vargjet multidimensionale</h4>";
         $paga = array
@@ -260,7 +274,60 @@
         ?>
     </div>
 </div>
+<h2 style="margin: 1em 0em 1em 0em;text-align: center;">Manipulimi me stringje</h2>
+<div class="stringjet">
+    <div class="str1" style="padding-bottom: 1em;">
+    <?php
+    echo "<h4>Funksioni explode:</h4>";
+    $njeString="Ky mesazh u shkrua ne windows 10";
+    print_r(explode(" ",$njeString));
+    $stringTjeter=(explode(" ",$njeString));
+    echo "<br>";
+    echo "<h4>Funksioni implode:</h4>";
+    echo implode(" ",$stringTjeter);
+    echo "<h4>Funksioni trim:</h4>";
+    $str= "Welcome to Kosovo!";
+    echo $str . "<br>";
+    echo trim($str,"Wes!");
+    echo "<h4>Funksioni printf</h4>";
+    $val = 512;
+    echo $val , "<br>";
+    printf("%f",$val);
+    ?>
+    </div>
+    <div class="str2" style="padding-bottom: 1em;">
+        <?php
+        echo "<h4>Funksioni substr</h4>";
+        $fjalia="Beautiful Albania";
+        echo substr($fjalia,6), "<br>";
+        echo substr($fjalia,2,12);
+        echo "<h4>Funksioni strlen</h4>";
+        echo $fjalia, "\n";
+        echo strlen($fjalia);
+        echo "<h4>Funksioni str_replace</h4>";
+        echo $fjalia, "<br>";
+        $zv = str_replace('Albania','Kosovo',$fjalia);
+        print_r($zv);
+        ?>
 
+    </div>
+</div>
+<h2 style="margin: 1em 0em 1em 0em;text-align: center;">Disa funksionet te RegEx</h2>
+<div class="regex" style="border: solid 1px blue;text-align: center;padding-bottom: 1em;">
+    <?php
+        echo "<h4>Funksioni preg_replace</h4>";
+        $stringu = 'Maj 01, 2018';
+        $modeli = '/(\w+) (\d+), (\d+)/i';
+        $zev = '${1} 10, $3';
+        echo "Forma normale " , $stringu;
+        echo "<br>";
+        echo "Forma ndryshuar ", preg_replace($modeli,$zev,$stringu);
+        echo "<h4>Funksioni preg_match</h4>";
+        echo "Funksioni preg_split.Ndarja e fjalise: Mia San Mia" , "<br>";
+        $split = preg_split("/[\s,]+/", "Mia San Mia");
+        print_r($split);
+    ?>
+</div>
 <div>
 <footer>
     <p><a href="#" class="f">Sht&euml;pia</a> | <a href="#" class="f">Katalogu</a></p>
