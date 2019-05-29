@@ -29,8 +29,28 @@ if ($_SERVER['REQUEST_METHOD']==='POST'){
         }
     }
     if (empty($emriGabim) && empty($emailGabim) && empty($fjalekalimiG)) {
-        echo "Regjistrimi u krye me sukses! Kyquni ne: ";
-        echo "<a href='Futu.html'>Futu</a>";
+        $con = mysqli_connect('localhost','root','');
+        if(!$con)
+        {
+            echo 'Nuk jeni lidhur me serverin!';
+        }
+        if(!mysqli_select_db($con,'regjistrimi'))
+        {
+            echo "Databaza nuk eshte selektuar me rregull";
+        }
+        $Emri = $_POST['emri'];
+        $Email = $_POST['email'];
+        $Fjalekalimi = $_POST['fjalekalimi'];
+
+        $sql = "INSERT INTO perdoruesit (username,email,password) VALUES ('$Emri','$Email','$Fjalekalimi')";
+        $rez = mysqli_query($con,$sql);
+        if(!$rez){
+            echo "Nuk jeni regjistruar me sukses.Emaili i shenuar egziston,ju lutem shenoni tjeter email!";
+        }
+        else{
+            echo "Jeni regjistruar me suskses.Klikoni per tu futur <a href='Futu.php'><b>Futu</b></a>";
+        }
+
 exit();
 }
 
@@ -61,7 +81,7 @@ exit();
         <input type="password" name="fjalekalimi" placeholder="Fjal&euml;kalimi" class="txtb" value="<?php if (isset($password)) echo $password ?>">
         <span class="error"><?php if (isset($fjalekalimiG)) echo $fjalekalimiG ?></span>
         <input type="submit" name="dergo" value="Krijo llogarin&euml;" class="signup-btn">
-        <a href="Futu.html">Posedoni nj&euml; llogari?</a>
+        <a href="Futu.php">Posedoni nj&euml; llogari?</a>
     </form>
 </div>
 </body>
