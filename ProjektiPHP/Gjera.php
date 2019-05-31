@@ -328,6 +328,21 @@
         print_r($split);
     ?>
 </div>
+<div style="border: solid 1px blue;">
+    <section style="display: inline-block;">    <h3>Cookies</h3>
+        <button><a href="Cookies.php">Gjenero Cookies</a> </button>
+
+        <h3>Sesionet</h3>
+        <button><a href="Sesionet.php">Gjenero Sesionet</a></button></section>
+    <section>
+        <h3>POO Pjesa</h3>
+        <button><a href="Poo0.php">Kliko(POO)</a></button>
+        <h3>Lexo fajllin</h3>
+        <button><a href="lexim.php">Lexo fajllin</a></button>
+        <h3>Shkruaj ne fajll</h3>
+        <button><a href="shkruaj.php">Shkruaj</a> </button>
+    </section>
+</div>
 <div>
 <footer>
     <p><a href="#" class="f">Sht&euml;pia</a> | <a href="#" class="f">Katalogu</a></p>
