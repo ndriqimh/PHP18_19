@@ -1,0 +1,5 @@
+TCP/IP (ang: Internet Protocol Suite, shqip: Suita e Protokolleve të Internetit) është bashkësia e protokolleve të komunikimit të përdorur për
+ Internetin dhe rrjetet e ngjajshme. E ka marrë emrin nga dy protokollet më të rëndësishme në të: Transmission Control Protocol (TCP) dhe Internet Protocol (IP),
+ të cilat ishin dy protokollet e para të definuara në këtë standard. Rrjeti i sotëm i IP-së paraqet sintezë të disa zhvillimeve që filluan në vitet e 60'-70',
+përkatësisht Interneti dhe LAN-eve (Local Area Network, Rrjeti i zonës lokale), që e shtri më gjërë në vitet e 80',
+së bashku me paraqitjen e World Wide Web në fillim të të 90-tave.
