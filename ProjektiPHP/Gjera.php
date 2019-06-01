@@ -65,9 +65,9 @@
         a:link{
             color: white;
         }
-        a:hover{
+        /*a:hover{
             background-color: #ffcccc;
-        }
+        }*/
         /*stilizimi i header,footer,nav*/
         header {
             color: white;
@@ -102,7 +102,6 @@
             background-color: #333333;
             font-family: "trebuchet ms",arial,helvetica,sans-serif;
             position: relative;
-
             left: 2px;
             text-decoration: none;
             color: white;
@@ -147,6 +146,41 @@
             padding-left: 1em;
             border: solid 1px red;
             width: 49%;
+        }
+        .cook{
+            display: flex;
+        }
+        .ses{
+            padding: 0em 0em 1em 1em;
+            border: solid 1px green;
+            margin-right: 2%;
+            width: 49%;
+            text-align: center;
+        }
+        .poo{
+            padding: 0em 0em 1em 1em;
+            border: solid 1px green;
+            width: 49%;
+        }
+        .fundi{
+            text-decoration: none;
+            color: black;
+        }
+        .ses button,.poo button{
+            padding: 0.5em;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            background: transparent;
+            color: #fff;
+            border-radius: 44px;
+            cursor: pointer;
+            transition: 0.8s;
+            font-size: 17px;
+            border: solid 2px black;
+            font-weight: bold;
+        }
+        .ses button:hover,.poo button:hover{
+            background: red;
         }
     </style>
 </head>
@@ -328,20 +362,22 @@
         print_r($split);
     ?>
 </div>
-<div style="border: solid 1px blue;">
-    <section style="display: inline-block;">    <h3>Cookies</h3>
-        <button><a href="Cookies.php">Gjenero Cookies</a> </button>
-
-        <h3>Sesionet</h3>
-        <button><a href="Sesionet.php">Gjenero Sesionet</a></button></section>
-    <section>
-        <h3>POO Pjesa</h3>
-        <button><a href="Poo0.php">Kliko(POO)</a></button>
-        <h3>Lexo fajllin</h3>
-        <button><a href="lexim.php">Lexo fajllin</a></button>
-        <h3>Shkruaj ne fajll</h3>
-        <button><a href="shkruaj.php">Shkruaj</a> </button>
-    </section>
+<h2 style="margin: 1em 0em 1em 0em;text-align: center">Cookies,sessions,POO,leximi dhe shkruarja ne fajlla</h2>
+<div  class="cook" style="margin: 1em 0em 1em 0em;">
+    <div class="ses">
+        <h4 style="margin-bottom: 0.5em;">Cookies</h4>
+        <button><a href="Cookies.php" class="fundi">Gjenero Cookies</a> </button>
+        <h4>Sesionet</h4>
+        <button><a href="Sesionet.php" class="fundi">Gjenero Sesionet</a></button></section>
+    </div>
+    <div class="poo">
+        <h4>POO Pjesa</h4>
+        <button><a href="Poo0.php" class="fundi">Kliko(POO)</a></button>
+        <h4>Lexo fajllin</h4>
+        <button><a href="lexim.php" class="fundi">Lexo fajllin</a></button>
+        <h4>Shkruaj ne fajll</h4>
+        <button><a href="shkruaj.php" class="fundi">Shkruaj</a> </button>
+    </div>
 </div>
 <div>
 <footer>
