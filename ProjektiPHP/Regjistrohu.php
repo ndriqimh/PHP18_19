@@ -104,12 +104,12 @@ if ($_SERVER['REQUEST_METHOD']==='POST'){
         $nstr = filter_var($str, FILTER_SANITIZE_STRING, FILTER_FLAG_STRIP_HIGH);
         echo "<h1>$nstr</h1>";
         ?>
-        <input type="text" name="emri" placeholder="Emri i plot&euml;" class="txtb" value="<?php if (isset($name)) echo $name ?>">
-        <span class="error"><?php if (isset($emriGabim)) echo $emriGabim ?></span>
-        <input type="email" name="email" placeholder="E-posta" class="txtb" value="<?php if (isset($email)) echo $email ?>">
-        <span class="error"><?php if (isset($emailGabim)) echo $emailGabim ?></span>
-        <input type="password" name="fjalekalimi" placeholder="Fjal&euml;kalimi" class="txtb" value="<?php if (isset($password)) echo $password ?>">
-        <span class="error"><?php if (isset($fjalekalimiG)) echo $fjalekalimiG ?></span>
+        <input type="text" name="emri" placeholder="Emri i plot&euml;" class="txtb" value="<?php if (isset($name)) echo strip_tags($name) ?>">
+        <span class="error"><?php if (isset($emriGabim)) echo strip_tags($emriGabim) ?></span>
+        <input type="email" name="email" placeholder="E-posta" class="txtb" value="<?php if (isset($email)) echo strip_tags($email) ?>">
+        <span class="error"><?php if (isset($emailGabim)) echo strip_tags($emailGabim) ?></span>
+        <input type="password" name="fjalekalimi" placeholder="Fjal&euml;kalimi" class="txtb" value="<?php if (isset($password)) echo strip_tags($password) ?>">
+        <span class="error"><?php if (isset($fjalekalimiG)) echo strip_tags($fjalekalimiG) ?></span>
         <input type="submit" name="dergo" value="Krijo llogarin&euml;" class="signup-btn">
         <a href="Futu.php">Posedoni nj&euml; llogari?</a>
     </form>
