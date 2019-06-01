@@ -40,7 +40,7 @@ class Antari3 extends Antaridyte{
         parent::__construct($emri,$mbiemri);
     }
     public function emriplote(){
-        echo "Antari i fundit:".$this->emri." ".$this->mbiemri." Universiteti:".$this->Universiteti;
+        echo "Antari i fundit:".$this->emri." ".$this->mbiemri."<br>"." Universiteti:".$this->Universiteti;
     }
     public function __descruct(){
         echo "Dekonstruktori u thirr";
