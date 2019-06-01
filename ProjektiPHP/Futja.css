@@ -55,3 +55,15 @@ body{
   cursor: pointer;
   margin: 12px 0;
 }
+a{
+  text-decoration: none;
+  color: #fff;
+  font-family: "montserrat",sans-serif;
+  font-size: 14px;
+  padding: 10px;
+  transition: 0.8s;
+  display: block;
+}
+a:hover{
+  background: rgba(0,0,0,.3);
+}

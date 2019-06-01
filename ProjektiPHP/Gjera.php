@@ -153,9 +153,9 @@
 <body>
 <div class="faqja">
     <header>
-        <small><a class="a" href="Regjistrohu.html">Regjistrohu</a></small>
+        <small><a class="a" href="Regjistrohu.php">Regjistrohu</a></small>
         <p class="lidhja" style="display: inline"><small>|</small></p>
-        <small><a class="a" href="Futu.html">Futu</a></small>
+        <small><a class="a" href="Futu.php">Futu</a></small>
         <p class="lidhja" style="display: inline"><small>|</small></p>
         <small><a class="a" href="https://www.rss.com">RSS</a></small>
         <p class="lidhja" style="display: inline"><small>|</small></p>
