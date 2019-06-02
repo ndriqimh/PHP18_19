@@ -406,12 +406,12 @@ function drop(ev) {
         <hr style="position: relative; top:-7px; margin: 0em -3.1em 0em -3.1em; ">
         <p class="menuja"><small>
                 <a href="Sht&euml;pia.html" class="menuja1" style="color:black;">Sht&euml;pia</a>&nbsp;&nbsp;
-                <a href="Sporti.html" class="menuja1">Sporti</a> &nbsp;&nbsp;
-                <a href="Shkencë.html" class="menuja1">Shkenca</a> &nbsp;&nbsp;            
-                <a href="Kulture.html" class="menuja1">Kultura</a> &nbsp;&nbsp;
-                <a href="Loja.html" class="menuja1">Loja</a> &nbsp;&nbsp;
+                <a href="Sporti.html" class="menuja1" style="color:black;">Sporti</a> &nbsp;&nbsp;
+                <a href="Shkencë.html" class="menuja1" style="color:black;">Shkenca</a> &nbsp;&nbsp;
+                <a href="Kulture.html" class="menuja1" style="color:black;">Kultura</a> &nbsp;&nbsp;
+                <a href="Loja.html" class="menuja1" style="color:black;">Loja</a> &nbsp;&nbsp;
                 <a href="Rreth.html" class="menuja1" style="color: black;text-shadow: 2px 2px 5px red;" > Rreth </a> &nbsp;
-                <a href="Gjera.php" class="menuja1"> Gjera </a> </small> </p>
+                <a href="Gjera.php" class="menuja1" style="color:black;"> Gj&euml;ra </a> </small> </p>
 
         <hr style="margin: 1em -3.1em 0em -3.1em;">
         <hr style="position: relative; top:-7px; margin: 0em -3.1em 0em -3.1em; ">
@@ -482,7 +482,7 @@ function drop(ev) {
             </p>
            
         </div>
-       <br>
+        <br>
         <div id="lastViewed">
             <h3 class="ex1" >Kontakted e fundit</h3>
             <p class="c"><a href="#" class="tel" style="color:black">&nbsp;Telefoni:&#128276;+38344123123</a>
@@ -490,33 +490,31 @@ function drop(ev) {
             </p>
             
         </div>
-     <br>
-     <div class="container">
-         <form action="Postieri.php" method="post">
+        <br>
+        <div class="container">
+             <form action="Postieri.php" method="post">
 
-             <p>Sugjerime: <span id="txtHint"></span></p>
-             <label for="emri">Emri</label>
-             <input type="text" onkeyup="showHint(this.value)" id="emri" name="emri" placeholder="Emri juaj..">
-             <label for="mbiemri">Mbiemri</label>
-             <input type="text" onkeyup="showHint(this.value)" id="mbiemri" name="mbiemri" placeholder="Mbiemri juaj..">
-             <label for="email">E-Posta</label>
-             <input type="text" id="email" name="email" placeholder="E-Posta juaj..">
+                 <p>Sugjerime: <span id="txtHint"></span></p>
+                <label for="emri">Emri</label>
+                <input type="text" onkeyup="showHint(this.value)" id="emri" name="emri" placeholder="Emri juaj..">
+                <label for="mbiemri">Mbiemri</label>
+                <input type="text" onkeyup="showHint(this.value)" id="mbiemri" name="mbiemri" placeholder="Mbiemri juaj..">
+                <label for="email">E-Posta</label>
+                <input type="text" id="email" name="email" placeholder="E-Posta juaj..">
 
-             <label for="shteti">Shteti</label>
-             <select id="shteti" name="shteti">
-                 <option value="australia">Shqip&euml;ria</option>
-                 <option value="canada">Kosova</option>
-                 <option value="usa">Maqedonia</option>
-             </select>
+                <label for="shteti">Shteti</label>
+                <select id="shteti" name="shteti">
+                    <option value="australia">Shqip&euml;ria</option>
+                    <option value="canada">Kosova</option>
+                    <option value="usa">Maqedonia</option>
+                </select>
 
-             <label for="subjekti">Mesazhi</label>
-             <textarea id="subjekti" name="mesazhi" placeholder="Shenoni ketu ..." style="height:200px"></textarea>
+                <label for="subjekti">Mesazhi</label>
+                <textarea id="subjekti" name="mesazhi" placeholder="Shenoni ketu ..." style="height:200px"></textarea>
+                <input type="submit" name="submit" value="Dergo">
+                </form>
+        </div>
 
-             <input type="submit" name="submit" value="Dergo">
-
-         </form>
-         
-</div>
             <div class="container">
                 <h2>Kërkuesi në Wikipedia</h2>
                 <table class="table">
@@ -528,9 +526,7 @@ function drop(ev) {
                     </tr>
                     <tr>
                         <th>
-                            <div id="results" style="font-family:Verdana; font-size:10px; font-style:normal;">
-
-                            </div>
+                            <div id="results" style="font-family:Verdana; font-size:10px; font-style:normal;"></div>
                         </th>
                     </tr>
                 </table>
