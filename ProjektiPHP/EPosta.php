@@ -17,11 +17,11 @@
 <div class="container" style="margin-top:100px;">
     <div class="row justify-content-center">
         <div class="col-md-6 col-md-offset-3" align="center">
-            <input id="name" placeholder="Name" class="form-control">
-            <input id="email" placeholder="Email" class="form-control">
-            <input id="subject" placeholder="Subject" class="form-control">
-            <textarea class="form-control" id="body" placeholder="Email Body"></textarea>
-            <input type="button" onclick="sendEmail()" value="Send An Email" class="btn btn-primary">
+            <input id="name" placeholder="Emri" class="form-control">
+            <input id="email" placeholder="E-Posta" class="form-control">
+            <input id="subject" placeholder="Subjekti" class="form-control">
+            <textarea class="form-control" id="body" placeholder="Mesazhi"></textarea>
+            <input type="button" onclick="sendEmail()" value="Dërgo" class="btn btn-primary">
         </div>
     </div>
 </div>
