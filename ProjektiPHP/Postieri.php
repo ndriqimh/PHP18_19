@@ -1,20 +1,42 @@
 <?php
-if(isset($_POST['submit'])){
-    $to = "email@example.com"; // this is your Email address
-    $from = $_POST['email']; // this is the sender's Email address
-    $emri = $_POST['emri'];
-    $mbiemri = $_POST['mbiemri'];
-    $subject = "Form submission";
-    $subject2 = "Copy of your form submission";
-    $mesazhi = $emri . " " . $mbiemri . " wrote the following:" . "\n\n" . $_POST['mesazhi'];
-    $mesazhi2 = "Here is a copy of your mesazhi " . $emri . "\n\n" . $_POST['mesazhi'];
+use PHPMailer\PHPMailer\PHPMailer;
 
-    $headers = "Nga:" . $from;
-    $headers2 = "Nga:" . $to;
-    mail($to,$subject,$mesazhi,$headers);
-    mail($from,$subject2,$mesazhi2,$headers2); // sends a copy of the mesazhi to the sender
-    echo "Mail Sent. Thank you " . $emri . ", we will contact you shortly.";
-    // You can also use header('Location: thank_you.php'); to redirect to another page.
-    // You cannot use header and echo together. It's one or the other.
+if (isset($_POST['name']) && isset($_POST['email'])) {
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $subject = $_POST['subject'];
+    $body = $_POST['body'];
+
+    require_once "PHPMailer/PHPMailer.php";
+    require_once "PHPMailer/SMTP.php";
+    require_once "PHPMailer/Exception.php";
+
+    $mail = new PHPMailer();
+
+    //SMTP Settings
+    $mail->isSMTP();
+    $mail->Host = "smtp.gmail.com";
+    $mail->SMTPAuth = true;
+    $mail->Username = "edisopi123@gmail.com";
+    $mail->Password = 'Falkoi1999';
+    $mail->Port = 465; //587
+    $mail->SMTPSecure = "ssl"; //tls
+
+    //Email Settings
+    $mail->isHTML(true);
+    $mail->setFrom($email, $name);
+    $mail->addAddress("muhamedzahiri@gmail.com");
+    $mail->Subject = $subject;
+    $mail->Body = $body;
+
+    if ($mail->send()) {
+        $status = "success";
+        $response = "Email is sent!";
+    } else {
+        $status = "failed";
+        $response = "Something is wrong: <br><br>" . $mail->ErrorInfo;
+    }
+
+    exit(json_encode(array("status" => $status, "response" => $response)));
 }
 ?>
