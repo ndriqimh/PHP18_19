@@ -219,11 +219,11 @@
     <hr style="position: relative; top:-7px; margin: 0em -3.1em 0em -3.1em; ">
     <p class="menuja"><small>
             <a href="Sht&euml;pia.html" class="menuja1" style="color:black;">Sht&euml;pia</a>&nbsp;&nbsp;
-            <a href="Sporti.html" class="menuja1">Sporti</a> &nbsp;&nbsp;
-            <a href="Shkencë.html" class="menuja1">Shkenca</a> &nbsp;&nbsp;
+            <a href="Sporti.html" class="menuja1" style="color:black;">Sporti</a> &nbsp;&nbsp;
+            <a href="Shkencë.html" class="menuja1" style="color:black;">Shkenca</a> &nbsp;&nbsp;
             <a href="Kulture.html" class="menuja1" style="color:black;">Kultura</a> &nbsp;&nbsp;
-            <a href="Loja.html" class="menuja1">Loja</a> &nbsp;
-            <a href="Rreth.html" class="menuja1">Rreth</a> &nbsp;&nbsp;
+            <a href="Loja.html" class="menuja1" style="color:black;">Loja</a> &nbsp;
+            <a href="Rreth.html" class="menuja1" style="color:black;">Rreth</a> &nbsp;&nbsp;
             <a href="Gjera.php" class="menuja1" style="color: black;text-shadow: 2px 2px 5px red;" > Gjera </a> </small> </p>
     <hr style="margin: 1em -3.1em 0em -3.1em;">
     <hr style="position: relative; top:-7px; margin: 0em -3.1em 0em -3.1em; ">
