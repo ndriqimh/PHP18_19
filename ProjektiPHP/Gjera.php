@@ -166,7 +166,7 @@
             text-decoration: none;
             color: black;
         }
-        .ses button,.poo button{
+        .ses button,.poo button,.gabimet button{
             padding: 0.5em;
             margin-top: 10px;
             margin-bottom: 10px;
@@ -179,9 +179,16 @@
             border: solid 2px black;
             font-weight: bold;
         }
-        .ses button:hover,.poo button:hover{
+        .ses button:hover,.poo button:hover,.gabimet button:hover{
             background: red;
         }
+        .gabimet{
+            border: solid 1px #FF6F61;
+            padding: 1em;
+            text-align: center;
+        }
+
+
     </style>
 </head>
 <body>
@@ -378,6 +385,13 @@
         <h4>Shkruaj ne fajll</h4>
         <button><a href="shkruaj.php" class="fundi">Shkruaj</a> </button>
     </div>
+</div>
+<h2 style="margin: 1em 0em 1em 0em;text-align: center;">Gabimet</h2>
+<div class="gabimet">
+    <h4>Error Handler</h4>
+    <button><a href="ErrorHandler.php" class="fundi">ErrorHandlerF</a></button>
+    <h4>Error exception</h4>
+    <button><a href="Errori.php" class="fundi">ErrorException</a></button>
 </div>
 <div>
 <footer>

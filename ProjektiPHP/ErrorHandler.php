@@ -1,11 +1,4 @@
-<html>
-    <body><form action="ErrorHandler.php" method="post">
-        <button type="submit">ErrorHandlerF</button>
-        </form>
-</body>
-</html>
-
-        <?php
+<?php
     function Errori($errno, $errstr) {
   echo "<b>Error:</b> [$errno] $errstr";
 }
