@@ -27,14 +27,6 @@ if ($_SERVER['REQUEST_METHOD']==='POST'){
             $fjalekalimiG = 'Fjalekalimi duhet te permbaje: 8 ose me shume karaktere,se paku nje shkronje dhe nje numer.';
         }
     }
-    //Trjatimet e gabimeve
-    $emaila=$_POST['email'];
-
-    if( filter_var($emaila,FILTER_VALIDATE_IP)==false){
-        echo "$emaila eshte email valide<br>";
-    }else{
-        echo "$emaila nuk eshte email valide";
-    }
     if (empty($emriGabim) && empty($emailGabim) && empty($fjalekalimiG)) {
 
 
