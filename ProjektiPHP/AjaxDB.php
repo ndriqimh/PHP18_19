@@ -36,7 +36,7 @@ include 'AjaxLidhjaDB.php';
                 <td data-target="username"><?php echo $row['username']; ?></td>
                 <td data-target="password"><?php echo $row['password']; ?></td>
                 <td data-target="email"><?php echo $row['email']; ?></td>
-                <td><a href="#" data-role="update" data-id="<?php echo $row['id'] ;?>">Update</a></td>
+                <td><a href="#" data-role="update" data-id="<?php echo $row['id'] ;?>">Përditëso</a></td>
             </tr>
         <?php }
         ?>
@@ -56,24 +56,24 @@ include 'AjaxLidhjaDB.php';
             </div>
             <div class="modal-body">
                 <div class="form-group">
-                    <label>Username</label>
+                    <label>Nofka</label>
                     <input type="text" id="username" class="form-control">
                 </div>
                 <div class="form-group">
-                    <label>Password</label>
+                    <label>Fjalkalimi</label>
                     <input type="text" id="password" class="form-control">
                 </div>
 
                 <div class="form-group">
-                    <label>Email</label>
+                    <label>E-Posta</label>
                     <input type="text" id="email" class="form-control">
                 </div>
                 <input type="hidden" id="userId" class="form-control">
 
             </div>
             <div class="modal-footer">
-                <a href="#" id="save" class="btn btn-primary pull-right">Update</a>
-                <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
+                <a href="#" id="save" class="btn btn-primary pull-right">Përditëso</a>
+                <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Mbyll</button>
             </div>
         </div>
     </div>
@@ -83,7 +83,7 @@ include 'AjaxLidhjaDB.php';
 <script>
     $(document).ready(function(){
 
-        //  append values in input fields
+        // Fut vlerat ne fushat hyrëse
         $(document).on('click','a[data-role=update]',function(){
             var id  = $(this).data('id');
             var username  = $('#'+id).children('td[data-target=username]').text();
@@ -105,13 +105,13 @@ include 'AjaxLidhjaDB.php';
             var email =   $('#email').val();
 
             $.ajax({
-                url      : 'connection.php',
+                url      : 'AjaxLidhjaDB.php',
                 method   : 'post',
                 data     : {username : username , password: password , email : email , id: id},
                 success  : function(response){
                     // now update user record in table
-                    $('#'+id).children('td[data-target=Username]').text(username);
-                    $('#'+id).children('td[data-target=Password]').text(password);
+                    $('#'+id).children('td[data-target=username]').text(username);
+                    $('#'+id).children('td[data-target=password]').text(password);
                     $('#'+id).children('td[data-target=email]').text(email);
                     $('#myModal').modal('toggle');
                 }

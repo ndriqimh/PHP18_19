@@ -8,8 +8,8 @@ if(isset($_POST['email'])){
     $email = $_POST['email'];
     $id = $_POST['id'];
 
-    //  query për përditësimin e të dhënave
-    $result  = mysqli_query($connection , "UPDATE user SET username='$username' , password='$password' , email = '$email' WHERE id='$id'");
+    // query për përditësimin e të dhënave
+    $result  = mysqli_query($connection , "UPDATE perdoruesit SET username='$username' , password='$password' , email = '$email' WHERE id='$id'");
     if($result){
         echo 'Të dhënat u përditësuan';
     }
