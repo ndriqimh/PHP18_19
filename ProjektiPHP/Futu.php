@@ -26,7 +26,7 @@ if(isset($_SESSION['login_user'])){
 
   <input type="submit" class="btn" value="Futu" name="submit">
     <p style="color: red;text-align: center;"><?php echo $error; ?></p>
-    <a href="Regjistrohu.php">Ende nuk posedoni nje llogari nj&euml; llogari?</a>
+    <a href="Regjistrohu.php">Ende nuk posedoni nj&euml; llogari?</a>
 </form>
   </body>
 </html>
