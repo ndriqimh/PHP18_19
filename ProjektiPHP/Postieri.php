@@ -21,11 +21,12 @@ if (isset($_POST['name']) && isset($_POST['email'])) {
     $mail->Password = 'Falkoi1999';
     $mail->Port = 465; //587
     $mail->SMTPSecure = "ssl"; //tls
-
+    
     //Email Settings
+    $adresa = $_POST['email'];
     $mail->isHTML(true);
     $mail->setFrom($email, $name);
-    $mail->addAddress("muhamedzahiri@gmail.com");
+    $mail->addAddress($adresa);
     $mail->Subject = $subject;
     $mail->Body = $body;
 
