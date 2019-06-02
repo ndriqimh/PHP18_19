@@ -166,6 +166,9 @@
             text-decoration: none;
             color: black;
         }
+        .fundi:link{
+            color:black;
+        }
         .ses button,.poo button,.gabimet button{
             padding: 0.5em;
             margin-top: 10px;
@@ -373,25 +376,25 @@
 <div  class="cook" style="margin: 1em 0em 1em 0em;">
     <div class="ses">
         <h4 style="margin-bottom: 0.5em;">Cookies</h4>
-        <button><a href="Cookies.php" class="fundi">Gjenero Cookies</a> </button>
+        <button><a href="Gjera-Shtesat/Cookies.php" class="fundi">Gjenero Cookies</a> </button>
         <h4>Sesionet</h4>
-        <button><a href="Sesionet.php" class="fundi">Gjenero Sesionet</a></button></section>
+        <button><a href="Gjera-Shtesat/Sesionet.php" class="fundi">Gjenero Sesionet</a></button></section>
     </div>
     <div class="poo">
         <h4>POO Pjesa</h4>
-        <button><a href="Poo0.php" class="fundi">Kliko(POO)</a></button>
+        <button><a href="Gjera-Shtesat/Poo0.php" class="fundi">Kliko(POO)</a></button>
         <h4>Lexo fajllin</h4>
-        <button><a href="lexim.php" class="fundi">Lexo fajllin</a></button>
+        <button><a href="Gjera-Shtesat/lexim.php" class="fundi">Lexo fajllin</a></button>
         <h4>Shkruaj ne fajll</h4>
-        <button><a href="shkruaj.php" class="fundi">Shkruaj</a> </button>
+        <button><a href="Gjera-Shtesat/shkruaj.php" class="fundi">Shkruaj</a> </button>
     </div>
 </div>
 <h2 style="margin: 1em 0em 1em 0em;text-align: center;">Gabimet</h2>
 <div class="gabimet">
     <h4>Error Handler</h4>
-    <button><a href="ErrorHandler.php" class="fundi">ErrorHandlerF</a></button>
+    <button><a href="Gjera-Shtesat/ErrorHandler.php" class="fundi">ErrorHandlerF</a></button>
     <h4>Error exception</h4>
-    <button><a href="Errori.php" class="fundi">ErrorException</a></button>
+    <button><a href="Gjera-Shtesat/Errori.php" class="fundi">ErrorException</a></button>
 </div>
 <div>
 <footer>
